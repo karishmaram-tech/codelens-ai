@@ -5,7 +5,7 @@ CodeLens AI is an intelligent engineering assistant built with Streamlit and Phi
 ## 🚀 Features
 * **🏗️ Architecture & Logic Mapping:** Automatically parses code flow into an interactive, visual Mermaid flowchart.
 * **🛡️ Deep Security Audit:** Highlights structural software vulnerabilities based on OWASP standards, injection risks, and weak cryptography.
-* **⚡ Complexity Profiling:** Analyzes runtime and space complexity using Big-O notation $O(N)$.
+* **⚡ Complexity Profiling:** Analyzes runtime and space complexity using Big-O notation.
 
 ## 🛠️ Tech Stack
 * **Frontend:** Streamlit
@@ -15,20 +15,14 @@ CodeLens AI is an intelligent engineering assistant built with Streamlit and Phi
 
 ## 📦 Local Setup Instructions
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/karishmaram-tech/codelens-ai.git](https://github.com/karishmaram-tech/codelens-ai.git)
-   cd codelens-ai
-Install requirements:
+### 1. Clone the repository
 
-Bash
+```bash
+git clone https://github.com/karishmaram-tech/codelens-ai.git
+cd codelens-ai
+2. Install requirements
 pip install -r requirements.txt
-Set your Groq API Key:
-
-Bash
-# On Windows PowerShell:
+3. Set your Groq API Key
 $env:GROQ_API_KEY="your_api_key_here"
-Run the app:
-
-Bash
+4. Run the app
 streamlit run rag_reasoning_agent.py
