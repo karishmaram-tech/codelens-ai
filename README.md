@@ -1,41 +1,62 @@
-# ?? CodeLens AI: Architecture & Logic Mapper
+﻿# 🔍 CodeLens AI
 
-CodeLens AI is an intelligent engineering assistant built with Streamlit and Phidata. It leverages the advanced **Llama-3.3-70b** model via Groq to perform static analysis, map out architectural data paths visually using Mermaid.js flowcharts, and run deep security audits on source code.
+> Architecture mapper · Security auditor · Complexity profiler — powered by Llama 3.3 70B
 
-## ?? Features
-* ??? **Architecture & Logic Mapping:** Automatically parses code flow into an interactive, visual Mermaid flowchart.
-* ??? **Deep Security Audit:** Highlights structural software vulnerabilities based on OWASP standards, injection risks, and weak cryptography.
-* ? **Complexity Profiling:** Analyzes runtime and space complexity using Big-O notation O(N).
+## ✨ Features
 
-## ??? Tech Stack
-* **Frontend:** Streamlit
-* **AI Orchestration:** Phidata Agentic Framework
-* **LLM Engine:** Llama 3.3 70B (via Groq API)
-* **Visualizations:** Streamlit-Mermaid (Mermaid.js parsing)
+| Feature | Description |
+|---------|-------------|
+| 🗺️ Architecture Mapping | Parses code flow into interactive Mermaid.js flowcharts |
+| 🔐 Security Audit | OWASP-based checks — injection risks, weak crypto, and more |
+| ⚡ Complexity Profiling | Big-O runtime and space complexity analysis |
 
-## ?? Local Setup Instructions
+## 🛠️ Tech Stack
 
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/karishmaram-tech/codelens-ai.git](https://github.com/karishmaram-tech/codelens-ai.git)
-```
+- **Frontend** — Streamlit
+- **AI Orchestration** — Phidata Agentic Framework
+- **LLM** — Llama 3.3 70B via Groq
+- **Visualisation** — streamlit-mermaid
 
-2. **Navigate into the directory:**
-```bash
+## 🚀 Quick Start
+
+### 1 — Clone
+\\\ash
+git clone https://github.com/karishmaram-tech/codelens-ai.git
 cd codelens-ai
-```
+\\\
 
-3. **Install requirements:**
-```bash
+### 2 — Virtual environment
+\\\ash
+python -m venv .venv
+.venv\Scripts\activate      # Windows
+source .venv/bin/activate   # macOS / Linux
+\\\
+
+### 3 — Install
+\\\ash
 pip install -r requirements.txt
-```
+\\\
 
-4. **Set your Groq API Key:**
-```powershell
-$env:GROQ_API_KEY="your_api_key_here"
-```
+### 4 — Configure
+\\\ash
+cp .env.example .env
+# Edit .env and add your GROQ_API_KEY
+\\\
 
-5. **Run the app:**
-```bash
+### 5 — Run
+\\\ash
 streamlit run rag_reasoning_agent.py
-```
+\\\
+
+## 🧪 Development
+
+\\\ash
+pip install -r requirements-dev.txt
+pre-commit install
+pytest tests/ -v
+ruff check . --fix
+\\\
+
+## 📄 License
+
+MIT © karishmaram-tech
